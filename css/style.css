@@ -930,10 +930,6 @@ p {
     .provide-support .card-body p br {
         display: none;
     }
-    .provide-support .card-group > .col-sm-6:last-child,
-    .provide-support .card-group > .col-lg-4:last-child {
-        padding-right: 0px;
-    }
     .cta-btn,
     .ticket .tariff-name,
     .ticket-body ul li,
@@ -1059,8 +1055,6 @@ p {
     }
     .consulting-cards-wrap {
         margin-top: 15px;
-        padding-right: 0px;
-        padding-left: 0px;
     }
     .partnership p,
     .ticket-body .more-btn,
@@ -1139,6 +1133,10 @@ p {
     .easy-start .card-group > div:nth-of-type(3) .card .card-body p br {
         display: none;
     }   
+    .provide-support .card-group > .col-sm-6:last-child, 
+    .provide-support .card-group > .col-lg-4:last-child {
+        padding-right: 0px;
+    }
 
 }
 
