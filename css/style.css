@@ -1,0 +1,1290 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #F4F7FA;
+    font-family: 'Gotham Pro';
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    color: #262626;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+h2 {
+    color: #303030;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+h1 ~ p {
+    line-height: 150%;
+    max-width: 546px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.line-nowrap {
+    white-space: nowrap;
+}
+
+.header-row {
+    position: relative;
+}
+
+.custom-logo-link {
+    max-width: 199px;
+    display: inline-block;
+}
+
+.custom-logo-link img {
+    width: 100%;
+    height: auto;
+}
+
+.about-company-txt {
+    max-width: 230px;
+}
+
+.about-company-txt p {
+    font-size: 12px;
+}
+
+.phone-btn {
+    color: #303030;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.header-menu-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-menu-list li {
+    list-style: none;
+}
+
+.header-menu-list li:not(:last-child) {
+    margin-right: 48px;
+}
+
+.header-menu-list li a {
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    font-weight: 500;
+}
+
+.header-btns,
+.footers-soc-icons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-btns a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header-btns a:not(:last-child) {
+    margin-right: 36px;
+}
+
+.header-btns .enter-btn {
+    background-color: #273895;
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 15px;
+}
+
+.header-menu {
+    width: 100%;
+    z-index: 99;
+}
+
+.header-menu .header-menu-item {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.close_mob_menu {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+}
+.mobile_menu_active {
+    left: 0;
+    transition: all 0.3s;
+}
+
+.header-burger-wrap {
+    display: flex;
+    z-index: 999;
+}
+
+.mobile-phone,
+.header-burger {
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    max-width: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 14px;
+    z-index: 999;
+    border-radius: 7px;
+}
+
+.header-burger {
+    position: relative;
+    background-color: #DEE6EF;
+    margin-left: 8px;
+}
+
+.mobile-phone {
+    background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);
+}
+
+.mobile-phone a {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header-burger span {
+    top: 35%;
+}
+
+.header-burger span,
+.header-burger:before,
+.header-burger:after {
+    position: absolute;
+    width: 22px;
+    height: 2.5px;
+    left: 50%;
+    background-color: #4614E8;
+    margin-left: -11px;
+    transition: all 0.3s ease-out;
+}
+
+.header-burger:before,
+.header-burger:after {
+    content: "";
+}
+.header-burger:before {
+    top: 65%;
+}
+.header-burger:after {
+    top: 49%;
+}
+.header-burger.active span {
+    transform: scale(0);
+}
+.header-burger.active:before {
+    transform: rotate(45deg);
+    top: 24.5px;
+}
+.header-burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+.cards-container {
+    max-width: 1062px;
+    margin: auto;
+}
+
+
+.top-block,
+.top-block-content {
+    position: relative;
+}
+
+.top-block:after {
+    content: '';
+    position: absolute;
+    top: -65%;
+    left: -10%;
+    border-radius: 50%;
+    width: 50vw;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(205, 187, 239, 0.20) 0%, rgba(196, 196, 196, 0.00) 100%);
+    z-index: -1;
+}
+
+.top-block-content:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Creative_process_SVG.svg);
+    background-repeat: no-repeat;
+}
+
+.cta-btn {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 15px;
+    background: #273895;
+    text-decoration: none;
+}
+
+.top-block-img {
+
+}
+
+.profit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/GroupProfit.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -95px;
+}
+
+.profit * {
+    user-select: none;
+}
+
+.profit span {
+    display: inline-block;
+    margin-top: 1px;
+    max-width: 99px;
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: #F4F7FA;
+    padding: 18px 6px 20px 6px;
+}
+
+.profit span b {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.consulting-txt-wrap {
+    padding-top: 10px;
+}
+
+.consulting-cards-wrap {
+    position: relative;
+    padding-top: 10px;
+    z-index: 9;
+}
+
+.consulting-cards {
+    display: flex;
+}
+
+.consulting-cards .card {
+    border-radius: 10px;
+    background: linear-gradient(236deg, #FFF 29.99%, #F4F9FF 79.17%);
+    box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+    padding: 24px 32px;
+    flex-direction: column;
+}
+
+.consulting-cards.card-group.align-items-start > div:nth-of-type(1) .card,
+.consulting-cards.card-group.align-items-end > div:nth-of-type(2) .card {
+    padding: 24px 24px;
+}
+
+.consulting-cards.card-group.align-items-start > div .card {
+    position: relative;
+}
+
+.purple-ball,
+.purple-ball-sm,
+.purple-ball-xs  {
+    position: absolute;
+    z-index: -3;
+}
+
+.purple-ball {
+    top: 0;
+    right: 10px;
+}
+
+.purple-ball-sm {
+    top: -12px;
+    left: -20px;
+}
+
+.purple-ball-xs {
+    top: 28px;
+    left: -13px;
+}
+
+.consulting-cards div .card .purple-txt .purple-txt-xl {    
+    
+}
+
+.consulting-cards div .card .purple-txt span {
+    font-weight: bold;   
+    color: transparent;    
+	-webkit-background-clip: text;
+	c-clip: text;
+	background-image: linear-gradient(to bottom, #4614E8,  #BCA7FF);
+}
+
+.consulting-cards > div .card p,
+.consulting-cards > div .card .purple-txt span,
+.provide-support .card p,
+.easy-start .card p {
+    line-height: 150%;
+}
+
+.consulting-cards > div .card .purple-txt {
+    font-size: 36px;
+    white-space: nowrap;
+}
+
+.consulting-cards > div .card .purple-txt .purple-txt-sm {
+    font-size: 16px;
+}
+
+.consulting-cards > div:first-child .card:nth-of-type(1) .purple-txt {
+    font-size: 48px;
+}
+.consulting-cards.align-items-start > .col-sm-6:last-child .card .purple-txt span {
+    font-family: 'Artegra Sans Extended Alt';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 2.72px;
+}
+
+
+.ticket-advantages {
+    display: flex;
+    border-radius: 10px;
+    background: #F4F7FA;
+    box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+    padding: 32px 48px;
+}
+
+.advantage {
+    text-align: left;
+}
+
+.advantage p {
+    color: #303030;
+    line-height: 162.5%;
+    font-weight: 500;
+    /* white-space: pre;
+    white-space: pre-wrap; */
+    margin-top: 8px;
+}
+
+.provide-support {
+
+}
+
+.provide-support .card-group {
+
+}
+
+.provide-support .card-img-wrapper,
+.ticket.main-ticket {
+    text-align: center;
+}
+
+.provide-support .card {
+    border-radius: 10px;
+    background: #FFF;
+    padding: 32px;
+    height: 100%;
+}
+
+.tariff {
+
+}
+
+.ticket {
+    border-radius: 20px;
+    background: #FFF;
+    padding: 48px;
+    height: 100%;
+}
+
+.ticket.main-ticket .ticket-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket.main-ticket .ticket-header .tariff-name {
+    order: 0;
+}
+
+.ticket.main-ticket .ticket-header .target-audience {
+    order: 2;
+}
+
+.ticket.main-ticket .ticket-header .price {
+    order: 1;
+    color: #C9C9C9;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 0;
+    line-height: 137.5%;
+}
+.ticket.main-ticket .ticket-body p {
+    margin-bottom: 16px;
+}
+
+.group-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    padding-top: 16px;
+}
+
+.tariff-btn {
+    display: inline-block;
+    font-size: 20px;
+    color: #273895;
+    padding: 8px 28px 10px 28px;
+    font-weight: 400;
+    text-decoration: none;
+    min-width: 130px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.tariff-btn span {
+    padding-bottom: 4px;
+    display: inline-block;
+    text-decoration: underline dashed; 
+    text-underline-offset: 6px;
+    /* text-underline-position: under; */
+}
+
+.tariff-btn.tariff-active-btn span {
+    text-decoration: none;
+}
+
+.tariff-btn.tariff-active-btn {
+    border-radius: 15px;
+    background: #273895;
+    color: #ffffff;
+}
+
+.ticket-header {
+
+}
+
+.ticket-header p {
+    line-height: 187.5%;
+}
+
+.ticket .tariff-name {
+    color: #2741D0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.ticket.main-ticket .tariff-name {
+    text-align: center;
+}
+
+.price,
+.ticket-body p {
+    color: #404040;
+    font-size: 16px;
+}
+
+.price {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.target-audience {
+    color: #737373;
+    padding: 8px 0;
+}
+
+.ticket,
+.ticket-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket-body {
+
+}
+
+.ticket-body p {
+    font-weight: 500;
+    margin: 16px 0 8px 0;
+}
+
+.ticket-body .cta-btn {
+    max-width: 220px;
+}
+
+.ticket.main-ticket .ticket-body .cta-btn {
+    margin: auto;
+}
+
+.ticket.main-ticket ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ticket.main-ticket ul li {
+    text-align: left;
+    width: 50%;
+}
+
+.ticket-body ul {
+    padding-top: 8px;
+}
+
+.ticket-body ul li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 18px;
+    line-height: 150%;
+}
+
+.ticket-body ul li:before {
+    position: absolute;
+    left: 2px;
+    top: 8px;
+    content: '';
+    background: url();
+    background-image: url(../img/down-filled-triangular-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 8px;
+    width: 8px;
+}
+
+.ticket-body .more-btn {
+    display: inline-block;
+    color: #2741D0;
+    line-height:  250%;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 0 16px 0;
+    position: relative;
+    padding-right: 10px;
+    max-width: 425px;
+    width: fit-content;
+}
+
+.ticket.main-ticket .ticket-body .more-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ticket-body  .more-btn:before {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: calc(100% + 10px);
+    height: 16px;
+    width: 22px;
+    background-image: url(../img/left-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    background-size: contain;
+}
+
+
+.partnership {
+    color: #ffffff;
+    background: linear-gradient(0deg, rgba(39, 56, 149, 0.60) 50%, rgba(39, 56, 149, 0.80) 100%), linear-gradient(90deg, #273895 30%, rgba(26, 39, 105, 0.00) 57.63%), url(../img/blue-bg-img.png), lightgray -22.532px 0.21px / 102.26% 99.938% no-repeat;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.partnership .container {
+    height: 100%;   
+    z-index: 1;
+}
+
+.partnership h2,
+.forecast-program h2 {
+    color: #ffffff;
+}
+
+.partnership p {
+    max-width: 308px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.partnership-column {
+    padding-top: 45px;
+    padding-bottom: 140px;
+    max-height: 400px;
+    background-image: url(../img/undraw_Agreement_re_d4dv.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 8% 50%;
+}
+
+.easy-start {
+    position: relative;
+    z-index: 5;
+}
+
+.easy-start:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/easy-start-section-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: contain;
+    z-index: -1;
+}
+
+.easy-start .card {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+}
+
+.easy-start .card-group > div .card {
+    padding: 32px;
+}   
+
+.easy-start .card-group > div:nth-of-type(2) .card,
+.easy-start .card-group > div:nth-of-type(3) .card {
+    padding: 40px;
+}
+
+.easy-start .card-group > div:nth-of-type(3) .card {
+    position: relative;
+}
+
+.easy-start .card-group > div:nth-of-type(3) .card:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: 0;
+    bottom: 0;
+    left: -3px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    padding: 2.5px 2.5px;
+    background: linear-gradient(45deg, rgb(185, 163, 254), rgb(70, 20, 232));
+    -webkit-mask: linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px) content-box content-box, linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px);
+    -webkit-mask-composite: xor;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.easy-start .card-group > div:nth-of-type(3) .card:after {
+    content: "";
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+    width: calc(100% + 1.5px);
+    height: calc(100% + 4px);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.easy-start .card-icon-wrap {
+    text-align: left;
+}
+
+.easy-start .card-img-wrapper {
+    text-align: center;
+}
+
+.easy-start .card.long-card {
+    min-height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.forecast-program {
+    background-color: #273895;
+    color: #ffffff;
+}
+
+.achievements-in-digit {
+    text-align: center;
+}
+
+.digit {
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    c-clip: text;
+    background-image: linear-gradient(to left, #BCA7FF, #4614E8);
+}
+
+.forecast-program .row .col-6:nth-of-type(n+4) .digit {
+    background-image: linear-gradient(to left, #4614E8, #BCA7FF);
+}   
+
+.achievements-txt {
+    line-height: 142%;
+}
+
+.footer {
+    padding-top: 121px;
+}
+
+.footer hr {
+    border: none; 
+    color: #DEE6EF; 
+    background-color: #DEE6EF; 
+    height: 1px; 
+}
+
+.footers-soc-icons {
+}
+
+.footers-soc-icons .soc-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #CFDAE7;
+    margin-left: 10px;
+}
+
+.footer .footer-row {
+    padding: 32px 0;
+}
+
+
+
+@media (max-width: 1439.98px) {
+
+    .top-block-content:before {
+        background-position: 100% 50%;
+        background-size: 33%;
+    }
+
+}
+
+@media (max-width: 1199.98px) {
+
+    .easy-start .card.long-card {
+        padding: 46px 40px 40px 40px;
+    }
+    .forecast-program h2 {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+
+    .header-menu-list {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    .header-menu-list li {
+        margin-bottom: 25px;
+    }
+    .header-menu-list li a {
+        color: #fff;
+    }
+    .ticket.main-ticket .ticket-header .price {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .header-menu-list li a {
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .header-menu-list li:not(:last-child) {
+        margin-right: 0;
+    }
+    .header-burger,
+    .mobile-phone {
+        display: block;
+    }
+    .header-burger.active {
+
+    }
+    .header-menu {
+        position: fixed; 
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.3s ease-out;
+        background-color: #273895;
+        padding: 70px 10px 20px 10px;
+    }
+    .header-menu.mobile_menu_active {
+        top: 0;
+    }
+    .header-list {
+        display: block;
+    }
+    .header-list li {
+        margin: 0 0 20px 0;
+    }
+    .top-block:after {
+        background: none;
+        position: static;
+    }
+    .top-block-img {
+        padding-left: 20px;
+    }
+    .profit {
+        margin-top: -30px;
+    }
+    .provide-support .card,
+    .easy-start .card-group > div .card,
+    .easy-start .card-group > div:nth-of-type(2) .card,
+    .easy-start .card-group > div:nth-of-type(3) .card,
+    .ticket {
+        padding: 24px;
+    }
+    .easy-start:before {
+        background-image: none;
+        position: static;
+    }
+    .provide-support .card-body p br {
+        display: none;
+    }
+    .provide-support .card-group > .col-sm-6:last-child,
+    .provide-support .card-group > .col-lg-4:last-child {
+        padding-right: 0px;
+    }
+    .cta-btn,
+    .ticket .tariff-name,
+    .ticket-body ul li,
+    .ticket-body .more-btn,
+    .tariff-btn {
+        font-size: 14px;
+    }
+    .ticket-body .more-btn:before {
+        top: 15px;
+    }
+    .partnership {
+        background-position: 15% 65%;
+    }
+    .footer {
+        padding-top: 84px;
+    }
+    .footer .custom-logo-link {
+        max-width: 127px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    h1, h2 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .top-block-txt,
+    .ticket .tariff-name,
+    .advantage,
+    .consulting-txt,
+    .target-audience,
+    .price,
+    .ticket-body p,
+    .footer-logo,
+    .about-company-txt p,
+    .partnership p  {
+        text-align: center;
+    }
+    p,
+    .cta-btn,
+    .ticket .tariff-name,
+    .ticket-body ul li,
+    .ticket-body .more-btn,
+    .tariff-btn,
+    .partnership p {
+        font-size: 12px;
+    }
+    .top-block-img {
+        padding-left: 0px;
+    }
+    .profit {
+        margin-top: 30px;
+    }
+    .ticket.main-ticket ul {
+        display: block;
+        margin-left: 0;
+    }
+    .ticket.main-ticket ul li {
+        width: 100%;
+    }
+    .ticket-body .more-btn:before {
+        height: 12px;
+        top: 17px;
+        left: calc(100% - 8px);
+    }
+    .ticket.main-ticket,
+    .easy-start .card p,
+    .easy-start .card h4 {
+        text-align: left;
+    }
+    .top-block-content:before {
+        opacity: 0.38;
+        background-position: 50% 20%;
+        background-size: contain;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+    .ticket-advantages {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tariff-btn {
+        min-width: 106px;
+        padding: 9px 28px 7px 28px;
+        border-radius: 10px;
+    }
+    .ticket .tariff-name {
+        letter-spacing: 1.8px;
+        line-height: 150%;
+    }
+    .advantage p br,
+    .purple-ball-xs {
+        display: none;
+    }
+    .advantage p {
+        font-size: 14px;
+    }
+    .consulting-service {
+        overflow-x: hidden;
+    }
+    .purple-ball {
+        top: -17px;
+        right: -70px;
+    }
+    .consulting-cards > div:first-child .card:nth-of-type(1) .purple-txt,
+    .consulting-cards > div .card .purple-txt {
+        font-size: 32px;
+        line-height: 100%;
+    }
+    .consulting-cards .card,
+    .consulting-cards.card-group.align-items-end > div:nth-of-type(2) .card,
+    .consulting-cards.card-group.align-items-start > div:nth-of-type(1) .card {
+        padding: 16px;
+        width: 100%;
+    }
+    .consulting-cards > div .card p,
+    .consulting-cards > div .card .purple-txt .purple-txt-sm {
+        font-size: 10px;
+    }
+    .consulting-cards-wrap {
+        margin-top: 15px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .partnership p,
+    .ticket-body .more-btn,
+    .ticket-body .cta-btn,
+    .about-company-txt,
+    .forecast-program h2,
+    .partnership h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .forecast-program h2 {
+        max-width: 300px;
+    }
+    .footers-soc-icons {
+        justify-content: center;
+    }
+    .easy-start .card .card-body {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 479.98px) {
+
+    .header-logo {
+        margin-top: 8px;
+    }
+    .partnership {
+        background-position: 35% 65%;
+    }
+    .partnership-column {
+        padding-top: 25px;
+        padding-bottom: 80px;
+        background-position: 50% 100%;
+    }
+    .target-audience {
+        padding-top: 0;
+    }
+
+}
+
+@media (max-width: 349.98px) {
+
+    .consulting-cards .card {
+        padding: 14px;
+    }
+    .consulting-cards > div .card p {
+        min-height: 45px;
+    }
+    .forecast-program h2 {
+        max-width: 173px;
+    }
+    .digit {
+        font-size: 24px;
+    }
+    .forecast-program .col-6.col-xl-auto:nth-of-type(1),
+    .forecast-program .col-6.col-xl-auto:nth-of-type(3) {
+        padding-left: 2px;
+    }
+    .forecast-program .col-6.col-xl-auto:nth-of-type(2),
+    .forecast-program .col-6.col-xl-auto:nth-of-type(4) {
+        padding-right: 2px;
+    }
+    .achievements-txt p {
+        font-size: 11px;
+    }
+    .partnership h2 {
+        max-width: 200px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+
+    .easy-start .card-group > div:nth-of-type(3) .card .card-body p br {
+        display: none;
+    }   
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1, h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .top-block-content:before {
+        background-size: 40%;
+        background-position: 100% 28%;
+    }
+    .ticket-advantages {
+        justify-content: space-between;
+    }
+    .advantage p {
+        font-size: 14px;
+    }
+    .advantage:not(:first-child) {
+        margin-left: 20px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+    .close_mob_menu,
+    .mob_menu_logo {
+        display: none;
+    }
+    .provide-support .card-group > div {
+        padding-right: 15px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    h1, h2 {
+        font-size: 32px;
+        line-height: 130%;
+    }
+    .top-block-content:before {
+        background-image: url(../img/Creative_process_SVG.svg);
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position: 100% 50%;
+    }
+    .ticket-advantages {
+        padding: 22px 30px;
+    }
+    .easy-start .card-group > div:nth-of-type(2) .card, 
+    .easy-start .card-group > div:nth-of-type(3) .card {
+        padding: 32px;
+    }
+    .easy-start:before {
+        left: 5px;
+        width: 98%;
+        max-width: 990px;
+    }
+    .easy-start .cta-btn {
+        padding: 16px 28px;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1279.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1365.98px) {
+
+    .advantage p {
+        font-size: 14px;
+    }
+    .advantage:not(:first-child) {
+        margin-left: 22px;
+    }
+    .partnership-column {
+        padding-top: 35px;
+        padding-bottom: 140px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .consulting-txt-wrap {
+        padding-top: 70px;
+    }
+    .consulting-cards-wrap {
+        padding-top: 60px;
+    }
+
+}
+@media (min-width: 1200px) and (max-width: 1365.98px) {
+
+    .forecast-program h2 {
+        font-size: 30px;
+    }
+    .easy-start:before {
+        left: 16px;
+        max-width: 1120px;
+    }
+
+}
+
+@media (min-width: 1366px) and (max-width: 1439.98px) {
+
+    .ticket-advantages {
+        padding: 26px 32px;
+    }
+    .advantage p {
+        font-size: 15.5px;
+    }
+
+}
+
+@media (min-width: 1366px) {
+
+    .advantage:not(:first-child) {
+        margin-left: 26px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .container {
+        max-width: 1310px;
+    }
+    .advantage:not(:first-child) {
+        margin-left: 32px;
+    }
+    .advantage p {
+        font-size: 16px;
+    }
+    .top-block-content:before {
+        background-size: 33.5%;
+        background-position: 89.5% 45%;
+    }
+
+}
