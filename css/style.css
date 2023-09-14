@@ -1137,6 +1137,9 @@ p {
     .provide-support .card-group > .col-lg-4:last-child {
         padding-right: 0px;
     }
+    .consulting-cards .card {
+        padding: 22px 24px;
+    }
 
 }
 
