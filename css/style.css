@@ -655,7 +655,7 @@ p {
 
 .partnership {
     color: #ffffff;
-    background: linear-gradient(0deg, rgba(39, 56, 149, 0.60) 50%, rgba(39, 56, 149, 0.80) 100%), linear-gradient(90deg, #273895 46%, rgba(26, 39, 105, 0.00) 57.63%), url(../img/blue-bg-img.png), lightgray -22.532px 0.21px / 102.26% 99.938% no-repeat;
+        background: linear-gradient(0deg, rgba(39, 56, 149, 0.60) 50%, rgba(39, 56, 149, 0.80) 100%), linear-gradient(90deg, #273895 55%, rgba(26, 39, 105, 0.35) 62.63%), url(../img/blue-bg-img.png), lightgray -22.532px 0.21px / 102.26% 99.938% no-repeat;
     width: 100%;
     background-repeat: no-repeat;
     background-position: 100% 50%;
